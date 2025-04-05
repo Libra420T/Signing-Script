@@ -35,7 +35,7 @@ for key in "${keys[@]}"; do
     ./development/tools/make_key "$certs_dir/$key" "$subject"
 done
 
-vendor_keys_dir="vendor/lineage-priv/keys"
+vendor_keys_dir="vendor/aosp-priv/keys"
 mkdir -p "$vendor_keys_dir"
 mv "$certs_dir" "$vendor_keys_dir"
 
